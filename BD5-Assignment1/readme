@@ -1,0 +1,19 @@
+In this lesson, we will create a Customer Support Ticketing System backend using Sequelize. This will help you practice various CRUD operations, sorting and filtering. By the end of this lesson, you will have learned how to:
+
+Setup Sequelize & define models
+
+Perform basic CRUD operations (Create, Read, Update, Delete).
+
+Filter and sort data.
+
+Instructions
+* Define 5 models named ticket, customer, agent, ticketCustomer, ticketAgent
+* The last 2 models will define the belongsToMany associations
+
+Helper Functions
+
+1.Define helper functions getTicketCustomers(ticketId), getTicketAgents(ticketId), getTicketDetails(ticketData) above all the endpoints
+2.getTicketCustomers(ticketId) will find all records matching the ticketId then run a for loop to find individual customer records using the customer model
+3.getTicketAgents(ticketId) will find all records matching the ticketId then run a for loop to find individual agent records using the agent model
+4.getTicketDetails() will simply return the data from both the functions. Create the getTicketAgents() by referencing getTicketCustomers() code
+5.You’ll use getTicketDetails() to fetch data for individual ticket in all the endpoints
